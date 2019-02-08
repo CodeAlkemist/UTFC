@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="_r_e_a_d_m_e_8_m_d" kind="file" language="Markdown">
+    <compoundname>README.MD</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>UTFC<sp/>a<sp/>UTF-8<sp/>library<sp/>for<sp/>C</highlight></codeline>
+<codeline><highlight class="normal">The<sp/>api<sp/>is<sp/>documented<sp/>in<sp/>the<sp/>code<sp/>and<sp/>in<sp/>the<sp/>docs<sp/>folder.</highlight></codeline>
+<codeline><highlight class="normal">##<sp/>Usage<sp/>example</highlight></codeline>
+<codeline><highlight class="normal">```c</highlight></codeline>
+<codeline><highlight class="normal">#include<sp/>&lt;utfc.h&gt;</highlight></codeline>
+<codeline><highlight class="normal">void<sp/>main()<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">##<sp/>Licensing</highlight></codeline>
+<codeline><highlight class="normal">Copyright<sp/>(c)<sp/>2019<sp/>Delta<sp/>Foundry<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline><highlight class="normal">&lt;br&gt;Usage<sp/>and<sp/>redistribution<sp/>permitted<sp/>as<sp/>per<sp/>the<sp/>terms<sp/>laid<sp/>in<sp/>the<sp/>LICENSE<sp/>file.<sp/></highlight></codeline>
+    </programlisting>
+    <location file="README.MD"/>
+  </compounddef>
+</doxygen>

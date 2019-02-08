@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="test_8c" kind="file" language="C++">
+    <compoundname>test.c</compoundname>
+    <includes refid="utfc_8h" local="no">utfc.h</includes>
+    <includes local="no">memory.h</includes>
+    <includes local="no">stdio.h</includes>
+    <incdepgraph>
+      <node id="19">
+        <label>stdlib.h</label>
+      </node>
+      <node id="20">
+        <label>memory.h</label>
+      </node>
+      <node id="17">
+        <label>test/test.c</label>
+        <link refid="test_8c"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>utfc.h</label>
+        <link refid="utfc_8h_source"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="test_8c_1ae8b243fdac3715a3da7c98b9a380eaa5" prot="public" static="no">
+        <name>BYTE_TO_BINARY_PATTERN</name>
+        <initializer>&quot;%c%c%c%c%c%c%c%c&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test/test.c" line="6" column="12" bodyfile="test/test.c" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="test_8c_1aa28480bfa03957b4f284c13e800ca8b0" prot="public" static="no">
+        <name>BYTE_TO_BINARY</name>
+        <param><defname>byte</defname></param>
+        <initializer>(byte &amp; 0x80 ? &apos;1&apos; : &apos;0&apos;), \
+  (byte &amp; 0x40 ? &apos;1&apos; : &apos;0&apos;), \
+  (byte &amp; 0x20 ? &apos;1&apos; : &apos;0&apos;), \
+  (byte &amp; 0x10 ? &apos;1&apos; : &apos;0&apos;), \
+  (byte &amp; 0x08 ? &apos;1&apos; : &apos;0&apos;), \
+  (byte &amp; 0x04 ? &apos;1&apos; : &apos;0&apos;), \
+  (byte &amp; 0x02 ? &apos;1&apos; : &apos;0&apos;), \
+  (byte &amp; 0x01 ? &apos;1&apos; : &apos;0&apos;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test/test.c" line="7" column="9" bodyfile="test/test.c" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="test_8c_1acdef7a1fd863a6d3770c1268cb06add3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void main</definition>
+        <argsstring>()</argsstring>
+        <name>main</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test/test.c" line="17" column="1" bodyfile="test/test.c" bodystart="17" bodyend="29"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>This<sp/>file<sp/>is<sp/>dedicated<sp/>by<sp/>the<sp/>copyright<sp/>holder<sp/>to<sp/>the<sp/>public<sp/>domain<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY<sp/>IN<sp/>ANY<sp/>WAY<sp/>SHAPE<sp/>OR<sp/>FORM</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;utfc.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BYTE_TO_BINARY_PATTERN<sp/>&quot;%c%c%c%c%c%c%c%c&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BYTE_TO_BINARY(byte)<sp/><sp/>\</highlight></codeline>
+<codeline lineno="8"><highlight class="preprocessor"><sp/><sp/>(byte<sp/>&amp;<sp/>0x80<sp/>?<sp/>&apos;1&apos;<sp/>:<sp/>&apos;0&apos;),<sp/>\</highlight></codeline>
+<codeline lineno="9"><highlight class="preprocessor"><sp/><sp/>(byte<sp/>&amp;<sp/>0x40<sp/>?<sp/>&apos;1&apos;<sp/>:<sp/>&apos;0&apos;),<sp/>\</highlight></codeline>
+<codeline lineno="10"><highlight class="preprocessor"><sp/><sp/>(byte<sp/>&amp;<sp/>0x20<sp/>?<sp/>&apos;1&apos;<sp/>:<sp/>&apos;0&apos;),<sp/>\</highlight></codeline>
+<codeline lineno="11"><highlight class="preprocessor"><sp/><sp/>(byte<sp/>&amp;<sp/>0x10<sp/>?<sp/>&apos;1&apos;<sp/>:<sp/>&apos;0&apos;),<sp/>\</highlight></codeline>
+<codeline lineno="12"><highlight class="preprocessor"><sp/><sp/>(byte<sp/>&amp;<sp/>0x08<sp/>?<sp/>&apos;1&apos;<sp/>:<sp/>&apos;0&apos;),<sp/>\</highlight></codeline>
+<codeline lineno="13"><highlight class="preprocessor"><sp/><sp/>(byte<sp/>&amp;<sp/>0x04<sp/>?<sp/>&apos;1&apos;<sp/>:<sp/>&apos;0&apos;),<sp/>\</highlight></codeline>
+<codeline lineno="14"><highlight class="preprocessor"><sp/><sp/>(byte<sp/>&amp;<sp/>0x02<sp/>?<sp/>&apos;1&apos;<sp/>:<sp/>&apos;0&apos;),<sp/>\</highlight></codeline>
+<codeline lineno="15"><highlight class="preprocessor"><sp/><sp/>(byte<sp/>&amp;<sp/>0x01<sp/>?<sp/>&apos;1&apos;<sp/>:<sp/>&apos;0&apos;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>main()<sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*helloascii<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Hello<sp/>utf-8&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><ref refid="structutf8__codepoint____" kindref="compound">utf8_char</ref><sp/>*encoded<sp/>=<sp/>EncodeAscii(helloascii,<sp/>strlen(helloascii));</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_<sp/>=<sp/>0;<sp/>_<sp/>&lt;<sp/>strlen(helloascii);<sp/>_++)<sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;bytes<sp/>of<sp/>char<sp/>%i&quot;</highlight><highlight class="normal">,<sp/>_);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/>&gt;<sp/>&quot;</highlight><highlight class="normal">BYTE_TO_BINARY_PATTERN</highlight><highlight class="stringliteral">&quot;-&quot;</highlight><highlight class="normal">BYTE_TO_BINARY_PATTERN</highlight><highlight class="stringliteral">&quot;-&quot;</highlight><highlight class="normal">BYTE_TO_BINARY_PATTERN</highlight><highlight class="stringliteral">&quot;-&quot;</highlight><highlight class="normal">BYTE_TO_BINARY_PATTERN,</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BYTE_TO_BINARY(encoded[_].bytes[0]),</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BYTE_TO_BINARY(encoded[_].bytes[1]),</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BYTE_TO_BINARY(encoded[_].bytes[2]),</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BYTE_TO_BINARY(encoded[_].bytes[3]));</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/>&gt;<sp/>%c<sp/>\n&quot;</highlight><highlight class="normal">,<sp/>encoded[_].bytes[0]);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="test/test.c"/>
+  </compounddef>
+</doxygen>

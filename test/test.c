@@ -26,4 +26,9 @@ void main() {
            BYTE_TO_BINARY(encoded[_].bytes[3]));
     printf(" > %c \n", encoded[_].bytes[0]);
   }
+  FILE *fh = fopen("test.txt", "w+b");
+  for (int _ = 0; _ < UtfStrlen(encoded); _++) {
+    fwrite(&encoded[_].bytes[0], sizeof(byte), 1, fh);
+  }
+  fclose(fh);
 }

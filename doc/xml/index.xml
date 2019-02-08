@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.15">
+  <compound refid="structutf8__codepoint____" kind="struct"><name>utf8_codepoint__</name>
+    <member refid="structutf8__codepoint_____1aec47d6eae54d6661c977467ec5d27bea" kind="variable"><name>bytes</name></member>
+  </compound>
+  <compound refid="_c_make_c_compiler_id_8c" kind="file"><name>CMakeCCompilerId.c</name>
+    <member refid="_c_make_c_compiler_id_8c_1a81dee0709ded976b2e0319239f72d174" kind="define"><name>COMPILER_ID</name></member>
+    <member refid="_c_make_c_compiler_id_8c_1a2ae9b72bb13abaabfcf2ee0ba7d3fa1d" kind="define"><name>STRINGIFY_HELPER</name></member>
+    <member refid="_c_make_c_compiler_id_8c_1a43e1cad902b6477bec893cb6430bd6c8" kind="define"><name>STRINGIFY</name></member>
+    <member refid="_c_make_c_compiler_id_8c_1adbc5372f40838899018fadbc89bd588b" kind="define"><name>PLATFORM_ID</name></member>
+    <member refid="_c_make_c_compiler_id_8c_1aba35d0d200deaeb06aee95ca297acb28" kind="define"><name>ARCHITECTURE_ID</name></member>
+    <member refid="_c_make_c_compiler_id_8c_1ad1280362da42492bbc11aa78cbf776ad" kind="define"><name>DEC</name></member>
+    <member refid="_c_make_c_compiler_id_8c_1a46d5d95daa1bef867bd0179594310ed5" kind="define"><name>HEX</name></member>
+    <member refid="_c_make_c_compiler_id_8c_1a07f8e5783674099cd7f5110e22a78cdb" kind="define"><name>C_DIALECT</name></member>
+    <member refid="_c_make_c_compiler_id_8c_1a4b0efeb7a5d59313986b3a0390f050f6" kind="variable"><name>info_compiler</name></member>
+    <member refid="_c_make_c_compiler_id_8c_1a2321403dee54ee23f0c2fa849c60f7d4" kind="variable"><name>info_platform</name></member>
+    <member refid="_c_make_c_compiler_id_8c_1a59647e99d304ed33b15cb284c27ed391" kind="variable"><name>info_arch</name></member>
+    <member refid="_c_make_c_compiler_id_8c_1a1ce162bad2fe6966ac8b33cc19e120b8" kind="variable"><name>info_language_dialect_default</name></member>
+    <member refid="_c_make_c_compiler_id_8c_1a0ddf1224851353fc92bfbff6f499fa97" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="feature__tests_8c" kind="file"><name>feature_tests.c</name>
+    <member refid="feature__tests_8c_1a1582568e32f689337602a16bf8a5bff0" kind="variable"><name>features</name></member>
+    <member refid="feature__tests_8c_1a3c04138a5bfe5d72780bb7e82a18e627" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="utfc_8h" kind="file"><name>utfc.h</name>
+    <member refid="utfc_8h_1a0c8186d9b9b7880309c27230bbb5e69d" kind="typedef"><name>byte</name></member>
+    <member refid="utfc_8h_1a27370523190ed4316659f3d31da68afd" kind="typedef"><name>utf8_char</name></member>
+    <member refid="utfc_8h_1a5d6d943c4f183ea22c301abfbb86a372" kind="function"><name>ParseRawBytes</name></member>
+    <member refid="utfc_8h_1a37baecb4330cc5b94eef15f94883989f" kind="function"><name>EncodeAscii</name></member>
+  </compound>
+  <compound refid="utfc_8hpp" kind="file"><name>utfc.hpp</name>
+  </compound>
+  <compound refid="_r_e_a_d_m_e_8_m_d" kind="file"><name>README.MD</name>
+  </compound>
+  <compound refid="utfc_8c" kind="file"><name>utfc.c</name>
+    <member refid="utfc_8c_1aad08b8f586a1febb51e0979f5cf0bdae" kind="function"><name>hello</name></member>
+    <member refid="utfc_8c_1a5d6d943c4f183ea22c301abfbb86a372" kind="function"><name>ParseRawBytes</name></member>
+    <member refid="utfc_8c_1a37baecb4330cc5b94eef15f94883989f" kind="function"><name>EncodeAscii</name></member>
+  </compound>
+  <compound refid="test_8c" kind="file"><name>test.c</name>
+    <member refid="test_8c_1ae8b243fdac3715a3da7c98b9a380eaa5" kind="define"><name>BYTE_TO_BINARY_PATTERN</name></member>
+    <member refid="test_8c_1aa28480bfa03957b4f284c13e800ca8b0" kind="define"><name>BYTE_TO_BINARY</name></member>
+    <member refid="test_8c_1acdef7a1fd863a6d3770c1268cb06add3" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="md__r_e_a_d_m_e" kind="page"><name>md_README</name>
+  </compound>
+  <compound refid="dir_8267895f62d73879727a3153a3123764" kind="dir"><name>cmake-build-debug/CMakeFiles/3.13.2</name>
+  </compound>
+  <compound refid="dir_95e29a8b8ee7c54052c171a88bb95675" kind="dir"><name>cmake-build-debug</name>
+  </compound>
+  <compound refid="dir_f89abcb304c928c7d889aa5625570de5" kind="dir"><name>cmake-build-debug/CMakeFiles</name>
+  </compound>
+  <compound refid="dir_3551c5bd1eb93bffc892448ae27f5a34" kind="dir"><name>cmake-build-debug/CMakeFiles/3.13.2/CompilerIdC</name>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>include</name>
+  </compound>
+  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>src</name>
+  </compound>
+  <compound refid="dir_13e138d54eb8818da29c3992edef070a" kind="dir"><name>test</name>
+  </compound>
+</doxygenindex>

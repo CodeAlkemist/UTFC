@@ -1,0 +1,158 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="utfc_8h" kind="file" language="C++">
+    <compoundname>utfc.h</compoundname>
+    <includes local="no">stdlib.h</includes>
+    <includedby refid="utfc_8c" local="yes">src/utfc.c</includedby>
+    <includedby refid="test_8c" local="no">test/test.c</includedby>
+    <incdepgraph>
+      <node id="5">
+        <label>stdlib.h</label>
+      </node>
+      <node id="4">
+        <label>include/utfc.h</label>
+        <link refid="utfc_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structutf8__codepoint____" prot="public">utf8_codepoint__</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="utfc_8h_1a0c8186d9b9b7880309c27230bbb5e69d" prot="public" static="no">
+        <type>unsigned char</type>
+        <definition>typedef unsigned char byte</definition>
+        <argsstring></argsstring>
+        <name>byte</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="copyright"><para>(c) 2019 Delta Foundry All Rights Reserved. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/utfc.h" line="11" column="1" bodyfile="include/utfc.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="utfc_8h_1a27370523190ed4316659f3d31da68afd" prot="public" static="no">
+        <type>struct <ref refid="structutf8__codepoint____" kindref="compound">utf8_codepoint__</ref></type>
+        <definition>typedef struct utf8_codepoint__  utf8_char</definition>
+        <argsstring></argsstring>
+        <name>utf8_char</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/utfc.h" line="17" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="utfc_8h_1a5d6d943c4f183ea22c301abfbb86a372" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structutf8__codepoint____" kindref="compound">utf8_char</ref> *</type>
+        <definition>utf8_char* ParseRawBytes</definition>
+        <argsstring>(byte *bytes, size_t size)</argsstring>
+        <name>ParseRawBytes</name>
+        <param>
+          <type>byte *</type>
+          <declname>bytes</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse a raw arbitrary amount of bytes into a utf-8 string. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bytes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A utf8_string corresponding to the characters identified in the bytes passed </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/utfc.h" line="25" column="1" bodyfile="src/utfc.c" bodystart="9" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="utfc_8h_1a37baecb4330cc5b94eef15f94883989f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structutf8__codepoint____" kindref="compound">utf8_char</ref> *</type>
+        <definition>utf8_char* EncodeAscii</definition>
+        <argsstring>(const char *string, size_t size)</argsstring>
+        <name>EncodeAscii</name>
+        <param>
+          <type>const char *</type>
+          <declname>string</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>string</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/utfc.h" line="32" column="1" bodyfile="src/utfc.c" bodystart="15" bodyend="33"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>UTFC_LIBRARY_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UTFC_LIBRARY_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>byte;</highlight></codeline>
+<codeline lineno="15" refid="structutf8__codepoint____" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structutf8__codepoint____" kindref="compound">utf8_codepoint__</ref><sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">byte</highlight><highlight class="normal"><sp/>bytes[4];</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">}<sp/><ref refid="structutf8__codepoint____" kindref="compound">utf8_char</ref>;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><ref refid="structutf8__codepoint____" kindref="compound">utf8_char</ref><sp/>*ParseRawBytes(</highlight><highlight class="keywordtype">byte</highlight><highlight class="normal"><sp/>*bytes,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><ref refid="structutf8__codepoint____" kindref="compound">utf8_char</ref><sp/>*EncodeAscii(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="include/utfc.h"/>
+  </compounddef>
+</doxygen>

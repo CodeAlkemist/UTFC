@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="md__r_e_a_d_m_e" kind="page">
+    <compoundname>md_README</compoundname>
+    <title>UTFC a UTF-8 library for C</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>The api is documented in the code and in the docs folder. ## Usage example <programlisting filename=".c"><codeline><highlight class="preprocessor">#include<sp/>&lt;utfc.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>main()<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> <heading level="2">Licensing</heading>
+</para>
+<para>Copyright (c) 2019 Delta Foundry All rights reserved. <linebreak/>
+Usage and redistribution permitted as per the terms laid in the LICENSE file. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

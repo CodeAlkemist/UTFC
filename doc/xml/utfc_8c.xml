@@ -1,0 +1,176 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="utfc_8c" kind="file" language="C++">
+    <compoundname>utfc.c</compoundname>
+    <includes refid="utfc_8h" local="yes">../include/utfc.h</includes>
+    <includes local="no">errno.h</includes>
+    <includes local="no">stdio.h</includes>
+    <incdepgraph>
+      <node id="13">
+        <label>stdlib.h</label>
+      </node>
+      <node id="14">
+        <label>errno.h</label>
+      </node>
+      <node id="11">
+        <label>src/utfc.c</label>
+        <link refid="utfc_8c"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>../include/utfc.h</label>
+        <link refid="utfc_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="utfc_8c_1aad08b8f586a1febb51e0979f5cf0bdae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void hello</definition>
+        <argsstring>(void)</argsstring>
+        <name>hello</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/utfc.c" line="5" column="1" bodyfile="src/utfc.c" bodystart="5" bodyend="7"/>
+      </memberdef>
+      <memberdef kind="function" id="utfc_8c_1a5d6d943c4f183ea22c301abfbb86a372" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structutf8__codepoint____" kindref="compound">utf8_char</ref> *</type>
+        <definition>utf8_char* ParseRawBytes</definition>
+        <argsstring>(byte *bytes, size_t size)</argsstring>
+        <name>ParseRawBytes</name>
+        <param>
+          <type>byte *</type>
+          <declname>bytes</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse a raw arbitrary amount of bytes into a utf-8 string. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bytes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A utf8_string corresponding to the characters identified in the bytes passed </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/utfc.c" line="9" column="1" bodyfile="src/utfc.c" bodystart="9" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="utfc_8c_1a37baecb4330cc5b94eef15f94883989f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structutf8__codepoint____" kindref="compound">utf8_char</ref> *</type>
+        <definition>utf8_char* EncodeAscii</definition>
+        <argsstring>(const char *string, size_t size)</argsstring>
+        <name>EncodeAscii</name>
+        <param>
+          <type>const char *</type>
+          <declname>string</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>string</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/utfc.c" line="15" column="1" bodyfile="src/utfc.c" bodystart="15" bodyend="33"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;../include/utfc.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;errno.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>hello(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Hello,<sp/>World!\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><ref refid="structutf8__codepoint____" kindref="compound">utf8_char</ref><sp/>*ParseRawBytes(</highlight><highlight class="keywordtype">byte</highlight><highlight class="normal"><sp/>*bytes,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size)<sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_<sp/>=<sp/>0;<sp/>_<sp/>&lt;<sp/>size;<sp/>_++)<sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><ref refid="structutf8__codepoint____" kindref="compound">utf8_char</ref><sp/>*EncodeAscii(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size)<sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mask<sp/>=<sp/>0b01111111;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">byte</highlight><highlight class="normal"><sp/>bytes[size];</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><ref refid="structutf8__codepoint____" kindref="compound">utf8_char</ref><sp/>*utf8Char<sp/>=<sp/>malloc(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(utf8Char)*size);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(utf8Char==NULL)<sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>errno<sp/>=<sp/>ENOMEM;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Apply<sp/>the<sp/>bitmask<sp/>to<sp/>each<sp/>char<sp/>in<sp/>the<sp/>string</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_<sp/>=<sp/>0;<sp/>_<sp/>&lt;<sp/>size;<sp/>_++)<sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>bytes[_]<sp/>=<sp/>(byte)<sp/>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">[_]<sp/>&amp;<sp/>mask);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_<sp/>=<sp/>0;<sp/>_<sp/>&lt;<sp/>size;<sp/>_++)<sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>utf8Char[_].bytes[0]<sp/>=<sp/>bytes[_];</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>utf8Char;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/utfc.c"/>
+  </compounddef>
+</doxygen>
